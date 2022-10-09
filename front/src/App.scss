@@ -46,7 +46,7 @@ body {
     height: 100%;
     width: 100%;
     border: 1px solid white;
-    padding: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     &[data-button-left], &[data-button-right] {
       grid-row: 1 / -1;
