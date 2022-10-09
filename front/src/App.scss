@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+.container > div:first-child {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  
+  & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    padding: 2rem;
+    cursor: pointer;
+    &[data-button-left], &[data-button-right] {
+      grid-row: 1 / -1;
+    }
+    &[data-button-right]{
+      grid-column: 3 / -1;
+    }
+    &:hover, &:active {
+      background-color: #fff;
+      color: #282c34;
+      scale: 1.1;
+      transition: all 0.2s ease-in-out;
+    }
+    &.active {
+      background-color: #fff;
+      color: #282c34;
+      border: 1px solid #282c34;
+    }
+  }
+}

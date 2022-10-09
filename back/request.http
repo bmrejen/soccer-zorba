@@ -1,0 +1,4 @@
+POST http://localhost:3000/goal
+Content-Type: application/json
+
+{"lat":32.001, "lng":34.8}
