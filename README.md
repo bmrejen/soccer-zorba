@@ -2,6 +2,10 @@
 
 ![Soccer game screenshot](./front/public/screenshot.png)
 
+## Demo video
+
+A video presentation is available [here](https://youtu.be/0f-AmnzuHwo)
+
 ## How to run the game
 
 1. You will need an API key for the Google Maps API. If you don't have one, you can get one [here](https://console.cloud.google.com/apis/credentials/key)
